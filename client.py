@@ -118,4 +118,13 @@ async def generate_archive(guild, channel, pins):
         await archive_channel.send(archive_message)
         await archive_channel.send(message_footer)
 
+# TODO:
+# Remove pin from channel 
+# async def remove_pin 
+
+# TODO:
+# Use pins in archive_channel to manage state of last pin in each channel
+# Check if there are newer pins than latest and start archiving from there
+# Max # of channels able to manage would be 50 
+
 bot.run(TOKEN)
